@@ -18,6 +18,8 @@ A starter pack to help you establish your AI Center of Excellence.
 
 We are in the middle of the most consequential platform shift of our careers. Unlike previous waves of digital transformation—where we bolted technology onto existing processes—AI creates a genuine cognitive loop between people and systems. That changes how we conceptualize work itself.
 
+**Enterprise AI is not one problem.** It is strategy, go-to-market, implementation, operations, and governance—all at once. Getting it right requires leaders who carry both technical credibility and the organizational instinct to know what actually moves a market and what it takes to run technology responsibly at scale. There is no "AI team" that solves this in isolation; it demands cross-functional leadership from development teams to the C-suite.
+
 **The stakes are not about tooling.** They are about whether your organization continues to learn, build differentiated IP, and thrive in a world where AI models can absorb and commoditize expertise overnight. Every enterprise must now cultivate two forms of capital:
 
 | | Human Capital | Token Capital |
