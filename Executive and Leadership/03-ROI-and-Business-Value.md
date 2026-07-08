@@ -115,7 +115,152 @@ If a product team shipping $20M/year in revenue brings a release forward by one 
 
 Not all of that is incremental profit, but it is strategically meaningful when applied across multiple products.
 
-## 5. Talent Attraction and Retention
+## 5. KPI Measurement Framework
+
+Use this five-pillar model to build a comprehensive measurement story that connects engineering metrics to business outcomes.
+
+```mermaid
+graph TD
+    A[GitHub Platform Investment] --> V[🚀 Velocity]
+    A --> Q[🛡️ Quality]
+    A --> E[⚡ Efficiency]
+    A --> X[📈 Experience]
+    A --> B[💰 Business Impact]
+
+    V --> V1[Cycle Time]
+    V --> V2[Deploy Frequency]
+    V --> V3[Throughput]
+
+    Q --> Q1[Defect Leakage]
+    Q --> Q2[Change Failure Rate]
+    Q --> Q3[Code Coverage]
+
+    E --> E1[Time Saved per Dev]
+    E --> E2[Task Completion Speed]
+    E --> E3[PR Review Volume]
+
+    X --> X1[Developer Adoption]
+    X --> X2[Satisfaction Score]
+    X --> X3[Scalability Signal]
+
+    B --> B1[Revenue Acceleration]
+    B --> B2[Cost Reduction]
+    B --> B3[Delivery Impact]
+```
+
+### Pillar 1: Velocity — Are we faster?
+
+| KPI | Definition | Target Signal |
+| --- | --- | --- |
+| Deployment Frequency | How often code is released to production | ↑ Weekly or daily deploys |
+| Lead Time for Changes | Time from commit to running in production | ↓ Hours, not weeks |
+| Cycle Time | End-to-end time from first commit to production | ↓ Shorter iteration loops |
+| Throughput | PRs merged per developer per sprint | ↑ Sustained output |
+
+### Pillar 2: Quality — Are we safe?
+
+| KPI | Definition | Target Signal |
+| --- | --- | --- |
+| Change Failure Rate | % of deployments causing a production issue | ↓ Below 15% |
+| Defect Leakage | Bugs found in production vs. those caught in staging/testing | ↓ Shift left catches more |
+| Code Coverage | % of codebase executed during automated testing | ↑ Above 80% on critical paths |
+| Rework Rate | % of PRs requiring post-merge fixes | ↓ First-time quality |
+
+### Pillar 3: Efficiency — Are we more productive?
+
+| KPI | Definition | Target Signal |
+| --- | --- | --- |
+| Developer Time Saved | Hours recovered per developer per week | ↑ 1.5–4 hrs/week |
+| Task Completion Speed | Time to complete common work items | ↓ 20–55% faster |
+| PR & Code Review Volume | Count of pull requests opened, reviewed, merged | ↑ Higher throughput, lower wait |
+| Automation Rate | % of CI/CD steps that are fully automated | ↑ Fewer manual gates |
+
+### Pillar 4: Experience — Will this scale?
+
+| KPI | Definition | Target Signal |
+| --- | --- | --- |
+| Adoption Rate | % of licensed developers actively using the platform weekly | ↑ Above 75% |
+| Developer Satisfaction | NPS or survey-based sentiment score | ↑ Quarter-over-quarter |
+| Onboarding Ramp Time | Time for new hires to ship first meaningful PR | ↓ Weeks, not months |
+| Tool Consolidation | Number of redundant tools retired | ↑ Platform convergence |
+
+### Pillar 5: Business Impact — Does it matter?
+
+| KPI | Definition | Target Signal |
+| --- | --- | --- |
+| Revenue Acceleration | Value of features shipped earlier due to faster delivery | ↑ Measurable $ impact |
+| Cost Reduction | Savings from tool consolidation, fewer incidents, less rework | ↑ Hard dollar savings |
+| Delivery Predictability | % of commitments met on time | ↑ Reliable planning |
+| Competitive Advantage | Speed to market vs. industry peers | ↑ Market differentiation |
+
+### KPI-to-ROI Mapping
+
+Use this to connect operational metrics to dollar outcomes in executive conversations:
+
+```mermaid
+flowchart LR
+    subgraph Operational KPIs
+        CY[Cycle Time ↓]
+        DF[Deploy Frequency ↑]
+        TS[Time Saved ↑]
+        CFR[Change Failure Rate ↓]
+        DL[Defect Leakage ↓]
+    end
+
+    subgraph ROI Drivers
+        PC[Productivity<br/>Capacity Recovered]
+        RA[Revenue<br/>Acceleration]
+        CA[Cost<br/>Avoidance]
+    end
+
+    subgraph Business Outcomes
+        NB[Net Benefit<br/>$$]
+    end
+
+    CY --> RA
+    DF --> RA
+    TS --> PC
+    CFR --> CA
+    DL --> CA
+
+    PC --> NB
+    RA --> NB
+    CA --> NB
+```
+
+### ROI Waterfall: From Metrics to Value
+
+```mermaid
+graph LR
+    A[Baseline State] -->|"Cycle time: 14 days"| B[GitHub Platform Deployed]
+    B -->|"Cycle time: 5 days"| C[64% Faster Delivery]
+    C -->|"$1.67M/month<br/>revenue acceleration"| D[Annual Value Created]
+
+    E[Baseline State] -->|"4 hrs/wk lost to<br/>manual tasks"| F[Copilot + Actions Enabled]
+    F -->|"1.5 hrs/wk saved<br/>per developer"| G[Capacity Recovered]
+    G -->|"500 devs × $90/hr<br/>× 52 weeks"| H[$3.5M Productivity Value]
+```
+
+### Measurement Cadence
+
+| Cadence | What to Measure | Who Cares |
+| --- | --- | --- |
+| Weekly | Active users, deploy frequency, PR volume | Engineering managers |
+| Monthly | Cycle time trends, satisfaction scores, defect leakage | Directors, VPs |
+| Quarterly | ROI calculations, cost avoidance, revenue impact | C-suite, Finance |
+
+### Example Executive KPI Dashboard Narrative
+
+> After 90 days on GitHub Enterprise, the platform engineering team observed:
+> - **Deployment frequency** increased from bi-weekly to 3x/week (+500%)
+> - **Lead time for changes** dropped from 12 days to 4 days (−67%)
+> - **Change failure rate** decreased from 22% to 9% (−59%)
+> - **Developer satisfaction** rose from 3.1 to 4.3 on a 5-point scale
+> - **Estimated annual productivity value**: $4.2M across 500 developers
+>
+> These improvements translate to roughly **$6.8M** in combined value against a **$1.1M** annual platform investment — a **6.2x ROI**.
+
+## 6. Talent Attraction and Retention
 
 Modern developer tooling is now part of the employee value proposition.
 
@@ -132,7 +277,7 @@ Replacing an engineer can cost meaningfully more than salary once recruiting, ra
 
 If better tooling helps retain even **5 senior engineers** whose replacement/ramp cost is **$50,000** each, that is **$250,000** in avoided churn cost before considering project disruption.
 
-## 6. Innovation Metrics
+## 7. Innovation Metrics
 
 GitHub's value is not just efficiency; it also increases the organization's ability to experiment.
 
