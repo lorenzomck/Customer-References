@@ -15,7 +15,7 @@
 ---
 
 <p align="center">
-  <a href="https://github.com/lorenzomck/GitHub-Field-Guides/search"><img src="https://img.shields.io/badge/%F0%9F%94%8D-Search%20this%20repo-238636?style=for-the-badge" alt="Search this repo"/></a>
+  <a href="https://lorenzomck.github.io/GitHub-Field-Guides/"><img src="https://img.shields.io/badge/%F0%9F%94%8D-Search%20this%20repo-238636?style=for-the-badge" alt="Search this repo"/></a>
 </p>
 
 <p align="center">

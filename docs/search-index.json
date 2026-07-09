@@ -1,0 +1,673 @@
+[
+  {
+    "title": "AI - Center of Excellence",
+    "type": "pack",
+    "description": "Establish an AICOE \u2014 charter, governance, Copilot adoption playbook, and leadership deck",
+    "path": "AI - Center of Excellence/README.md"
+  },
+  {
+    "title": "AI Center of Excellence (AICOE) Charter",
+    "type": "guide",
+    "pack": "AI - Center of Excellence",
+    "description": "Establish an AICOE \u2014 charter, governance, Copilot adoption playbook, and leadership deck",
+    "path": "AI - Center of Excellence/01-AICOE-Charter.md"
+  },
+  {
+    "title": "AICOE Resource Hub Index",
+    "type": "guide",
+    "pack": "AI - Center of Excellence",
+    "description": "Establish an AICOE \u2014 charter, governance, Copilot adoption playbook, and leadership deck",
+    "path": "AI - Center of Excellence/02-Resource-Hub-Index.md"
+  },
+  {
+    "title": "AICOE Governance Checklist",
+    "type": "guide",
+    "pack": "AI - Center of Excellence",
+    "description": "Establish an AICOE \u2014 charter, governance, Copilot adoption playbook, and leadership deck",
+    "path": "AI - Center of Excellence/03-Governance-Checklist.md"
+  },
+  {
+    "title": "GitHub Copilot Adoption Playbook",
+    "type": "guide",
+    "pack": "AI - Center of Excellence",
+    "description": "Establish an AICOE \u2014 charter, governance, Copilot adoption playbook, and leadership deck",
+    "path": "AI - Center of Excellence/04-Copilot-Adoption-Playbook.md"
+  },
+  {
+    "title": "Champion's Guide: Pitching an AI Center of Excellence to Leadership",
+    "type": "guide",
+    "pack": "AI - Center of Excellence",
+    "description": "Establish an AICOE \u2014 charter, governance, Copilot adoption playbook, and leadership deck",
+    "path": "AI - Center of Excellence/05-Leadership-Deck-Outline.md"
+  },
+  {
+    "title": "AI Models in GitHub Copilot",
+    "type": "pack",
+    "description": "Model catalog, comparison, pricing, Auto selection, admin policies",
+    "path": "AI Models in GitHub Copilot/README.md"
+  },
+  {
+    "title": "Model Catalog",
+    "type": "guide",
+    "pack": "AI Models in GitHub Copilot",
+    "description": "Model catalog, comparison, pricing, Auto selection, admin policies",
+    "path": "AI Models in GitHub Copilot/01-Model-Catalog.md"
+  },
+  {
+    "title": "Model Comparison and Selection",
+    "type": "guide",
+    "pack": "AI Models in GitHub Copilot",
+    "description": "Model catalog, comparison, pricing, Auto selection, admin policies",
+    "path": "AI Models in GitHub Copilot/02-Model-Comparison-and-Selection.md"
+  },
+  {
+    "title": "Pricing and AI Credits",
+    "type": "guide",
+    "pack": "AI Models in GitHub Copilot",
+    "description": "Model catalog, comparison, pricing, Auto selection, admin policies",
+    "path": "AI Models in GitHub Copilot/03-Pricing-and-AI-Credits.md"
+  },
+  {
+    "title": "Auto Model Selection",
+    "type": "guide",
+    "pack": "AI Models in GitHub Copilot",
+    "description": "Model catalog, comparison, pricing, Auto selection, admin policies",
+    "path": "AI Models in GitHub Copilot/04-Auto-Model-Selection.md"
+  },
+  {
+    "title": "Admin Guide \u2013 Model Policies",
+    "type": "guide",
+    "pack": "AI Models in GitHub Copilot",
+    "description": "Model catalog, comparison, pricing, Auto selection, admin policies",
+    "path": "AI Models in GitHub Copilot/05-Admin-Guide-Model-Policies.md"
+  },
+  {
+    "title": "Agentic Workflows and AI Agents",
+    "type": "pack",
+    "description": "Copilot Coding Agent, MCP registry setup, agent guardrails, use cases, custom agents",
+    "path": "Agentic Workflows and AI Agents/README.md"
+  },
+  {
+    "title": "Copilot Coding Agent Overview",
+    "type": "guide",
+    "pack": "Agentic Workflows and AI Agents",
+    "description": "Copilot Coding Agent, MCP registry setup, agent guardrails, use cases, custom agents",
+    "path": "Agentic Workflows and AI Agents/01-Copilot-Coding-Agent-Overview.md"
+  },
+  {
+    "title": "Configuring Agentic Workflows",
+    "type": "guide",
+    "pack": "Agentic Workflows and AI Agents",
+    "description": "Copilot Coding Agent, MCP registry setup, agent guardrails, use cases, custom agents",
+    "path": "Agentic Workflows and AI Agents/02-Configuring-Agentic-Workflows.md"
+  },
+  {
+    "title": "MCP Overview and Registry Setup",
+    "type": "guide",
+    "pack": "Agentic Workflows and AI Agents",
+    "description": "Copilot Coding Agent, MCP registry setup, agent guardrails, use cases, custom agents",
+    "path": "Agentic Workflows and AI Agents/03-MCP-Overview-and-Registry-Setup.md"
+  },
+  {
+    "title": "Agent Guardrails and Governance",
+    "type": "guide",
+    "pack": "Agentic Workflows and AI Agents",
+    "description": "Copilot Coding Agent, MCP registry setup, agent guardrails, use cases, custom agents",
+    "path": "Agentic Workflows and AI Agents/04-Agent-Guardrails-and-Governance.md"
+  },
+  {
+    "title": "Use Cases and Custom Agents",
+    "type": "guide",
+    "pack": "Agentic Workflows and AI Agents",
+    "description": "Copilot Coding Agent, MCP registry setup, agent guardrails, use cases, custom agents",
+    "path": "Agentic Workflows and AI Agents/05-Use-Cases-and-Custom-Agents.md"
+  },
+  {
+    "title": "Security and Effectiveness Measurement",
+    "type": "guide",
+    "pack": "Agentic Workflows and AI Agents",
+    "description": "Copilot Coding Agent, MCP registry setup, agent guardrails, use cases, custom agents",
+    "path": "Agentic Workflows and AI Agents/06-Security-and-Effectiveness-Measurement.md"
+  },
+  {
+    "title": "App Modernization",
+    "type": "pack",
+    "description": "Legacy codebase modernization with Copilot \u2014 architecture analysis, phased migration, CI/CD",
+    "path": "App Modernization/README.md"
+  },
+  {
+    "title": "App Modernization Overview",
+    "type": "guide",
+    "pack": "App Modernization",
+    "description": "Legacy codebase modernization with Copilot \u2014 architecture analysis, phased migration, CI/CD",
+    "path": "App Modernization/01-App-Modernization-Overview.md"
+  },
+  {
+    "title": "Reference Walkthrough \u2014 DOOM Modernization",
+    "type": "guide",
+    "pack": "App Modernization",
+    "description": "Legacy codebase modernization with Copilot \u2014 architecture analysis, phased migration, CI/CD",
+    "path": "App Modernization/02-Reference-Walkthrough.md"
+  },
+  {
+    "title": "Copilot-Driven Modernization Playbook",
+    "type": "guide",
+    "pack": "App Modernization",
+    "description": "Legacy codebase modernization with Copilot \u2014 architecture analysis, phased migration, CI/CD",
+    "path": "App Modernization/03-Modernization-Playbook.md"
+  },
+  {
+    "title": "Copilot Instructions Best Practices for Modernization",
+    "type": "guide",
+    "pack": "App Modernization",
+    "description": "Legacy codebase modernization with Copilot \u2014 architecture analysis, phased migration, CI/CD",
+    "path": "App Modernization/04-Copilot-Instructions-Best-Practices.md"
+  },
+  {
+    "title": "Measuring Modernization Success",
+    "type": "guide",
+    "pack": "App Modernization",
+    "description": "Legacy codebase modernization with Copilot \u2014 architecture analysis, phased migration, CI/CD",
+    "path": "App Modernization/05-Measuring-Success.md"
+  },
+  {
+    "title": "Enterprise Identity and Access Management",
+    "type": "pack",
+    "description": "SSO/OIDC, Entra ID + SCIM, PAT hardening, fine-grained permissions, zero trust",
+    "path": "Enterprise Identity and Access Management/README.md"
+  },
+  {
+    "title": "SSO, SAML, and OIDC Configuration",
+    "type": "guide",
+    "pack": "Enterprise Identity and Access Management",
+    "description": "SSO/OIDC, Entra ID + SCIM, PAT hardening, fine-grained permissions, zero trust",
+    "path": "Enterprise Identity and Access Management/01-SSO-SAML-and-OIDC-Configuration.md"
+  },
+  {
+    "title": "Entra ID Integration and SCIM Provisioning",
+    "type": "guide",
+    "pack": "Enterprise Identity and Access Management",
+    "description": "SSO/OIDC, Entra ID + SCIM, PAT hardening, fine-grained permissions, zero trust",
+    "path": "Enterprise Identity and Access Management/02-Entra-ID-Integration-and-SCIM-Provisioning.md"
+  },
+  {
+    "title": "PAT Policies and Hardening",
+    "type": "guide",
+    "pack": "Enterprise Identity and Access Management",
+    "description": "SSO/OIDC, Entra ID + SCIM, PAT hardening, fine-grained permissions, zero trust",
+    "path": "Enterprise Identity and Access Management/03-PAT-Policies-and-Hardening.md"
+  },
+  {
+    "title": "Auth Strategy: GitHub Apps vs. PATs vs. OAuth",
+    "type": "guide",
+    "pack": "Enterprise Identity and Access Management",
+    "description": "SSO/OIDC, Entra ID + SCIM, PAT hardening, fine-grained permissions, zero trust",
+    "path": "Enterprise Identity and Access Management/04-Auth-Strategy-GitHub-Apps-vs-PATs-vs-OAuth.md"
+  },
+  {
+    "title": "Fine-Grained Permissions and Custom Repository Roles",
+    "type": "guide",
+    "pack": "Enterprise Identity and Access Management",
+    "description": "SSO/OIDC, Entra ID + SCIM, PAT hardening, fine-grained permissions, zero trust",
+    "path": "Enterprise Identity and Access Management/05-Fine-Grained-Permissions-and-Custom-Roles.md"
+  },
+  {
+    "title": "Audit Logging, Access Reviews, and Zero Trust",
+    "type": "guide",
+    "pack": "Enterprise Identity and Access Management",
+    "description": "SSO/OIDC, Entra ID + SCIM, PAT hardening, fine-grained permissions, zero trust",
+    "path": "Enterprise Identity and Access Management/06-Audit-Logging-Access-Reviews-and-Zero-Trust.md"
+  },
+  {
+    "title": "Executive and Leadership",
+    "type": "pack",
+    "description": "TCO analysis, ROI frameworks, competitive positioning, exec presentation templates",
+    "path": "Executive and Leadership/README.md"
+  },
+  {
+    "title": "Why GitHub",
+    "type": "guide",
+    "pack": "Executive and Leadership",
+    "description": "TCO analysis, ROI frameworks, competitive positioning, exec presentation templates",
+    "path": "Executive and Leadership/01-Why-GitHub.md"
+  },
+  {
+    "title": "Total Cost of Ownership",
+    "type": "guide",
+    "pack": "Executive and Leadership",
+    "description": "TCO analysis, ROI frameworks, competitive positioning, exec presentation templates",
+    "path": "Executive and Leadership/02-Total-Cost-of-Ownership.md"
+  },
+  {
+    "title": "ROI and Business Value",
+    "type": "guide",
+    "pack": "Executive and Leadership",
+    "description": "TCO analysis, ROI frameworks, competitive positioning, exec presentation templates",
+    "path": "Executive and Leadership/03-ROI-and-Business-Value.md"
+  },
+  {
+    "title": "Competitive Positioning",
+    "type": "guide",
+    "pack": "Executive and Leadership",
+    "description": "TCO analysis, ROI frameworks, competitive positioning, exec presentation templates",
+    "path": "Executive and Leadership/04-Competitive-Positioning.md"
+  },
+  {
+    "title": "Executive Presentation Template",
+    "type": "guide",
+    "pack": "Executive and Leadership",
+    "description": "TCO analysis, ROI frameworks, competitive positioning, exec presentation templates",
+    "path": "Executive and Leadership/05-Executive-Presentation-Template.md"
+  },
+  {
+    "title": "Getting Started with GitHub",
+    "type": "pack",
+    "description": "Plans, licensing, instance types, admin setup, and launching a trial",
+    "path": "Getting Started with GitHub/README.md"
+  },
+  {
+    "title": "Plans and Licensing Guide",
+    "type": "guide",
+    "pack": "Getting Started with GitHub",
+    "description": "Plans, licensing, instance types, admin setup, and launching a trial",
+    "path": "Getting Started with GitHub/01-Plans-and-Licensing-Guide.md"
+  },
+  {
+    "title": "Instance Types \u2013 Cloud vs Server",
+    "type": "guide",
+    "pack": "Getting Started with GitHub",
+    "description": "Plans, licensing, instance types, admin setup, and launching a trial",
+    "path": "Getting Started with GitHub/02-Instance-Types-Cloud-vs-Server.md"
+  },
+  {
+    "title": "Admin Setup and Configuration",
+    "type": "guide",
+    "pack": "Getting Started with GitHub",
+    "description": "Plans, licensing, instance types, admin setup, and launching a trial",
+    "path": "Getting Started with GitHub/03-Admin-Setup-and-Configuration.md"
+  },
+  {
+    "title": "GitHub Copilot Overview",
+    "type": "guide",
+    "pack": "Getting Started with GitHub",
+    "description": "Plans, licensing, instance types, admin setup, and launching a trial",
+    "path": "Getting Started with GitHub/04-GitHub-Copilot-Overview.md"
+  },
+  {
+    "title": "Security Features \u2013 GitHub Advanced Security",
+    "type": "guide",
+    "pack": "Getting Started with GitHub",
+    "description": "Plans, licensing, instance types, admin setup, and launching a trial",
+    "path": "Getting Started with GitHub/05-Security-Features-Advanced-Security.md"
+  },
+  {
+    "title": "Launching a Trial",
+    "type": "guide",
+    "pack": "Getting Started with GitHub",
+    "description": "Plans, licensing, instance types, admin setup, and launching a trial",
+    "path": "Getting Started with GitHub/06-Launching-a-Trial.md"
+  },
+  {
+    "title": "Key Resources and Links",
+    "type": "guide",
+    "pack": "Getting Started with GitHub",
+    "description": "Plans, licensing, instance types, admin setup, and launching a trial",
+    "path": "Getting Started with GitHub/07-Key-Resources-and-Links.md"
+  },
+  {
+    "title": "GitHub Actions and CICD",
+    "type": "pack",
+    "description": "Workflows, runners, starter templates, migration from other CI tools",
+    "path": "GitHub Actions and CICD/README.md"
+  },
+  {
+    "title": "Introduction to GitHub Actions",
+    "type": "guide",
+    "pack": "GitHub Actions and CICD",
+    "description": "Workflows, runners, starter templates, migration from other CI tools",
+    "path": "GitHub Actions and CICD/01-Introduction-to-GitHub-Actions.md"
+  },
+  {
+    "title": "Starter Workflows and Templates",
+    "type": "guide",
+    "pack": "GitHub Actions and CICD",
+    "description": "Workflows, runners, starter templates, migration from other CI tools",
+    "path": "GitHub Actions and CICD/02-Starter-Workflows-and-Templates.md"
+  },
+  {
+    "title": "Runners and Infrastructure",
+    "type": "guide",
+    "pack": "GitHub Actions and CICD",
+    "description": "Workflows, runners, starter templates, migration from other CI tools",
+    "path": "GitHub Actions and CICD/03-Runners-and-Infrastructure.md"
+  },
+  {
+    "title": "Migration Guide",
+    "type": "guide",
+    "pack": "GitHub Actions and CICD",
+    "description": "Workflows, runners, starter templates, migration from other CI tools",
+    "path": "GitHub Actions and CICD/04-Migration-Guide.md"
+  },
+  {
+    "title": "Security and Best Practices",
+    "type": "guide",
+    "pack": "GitHub Actions and CICD",
+    "description": "Workflows, runners, starter templates, migration from other CI tools",
+    "path": "GitHub Actions and CICD/05-Security-and-Best-Practices.md"
+  },
+  {
+    "title": "GitHub Copilot Adoption",
+    "type": "pack",
+    "description": "Business case, rollout strategy, prompt engineering, measuring ROI",
+    "path": "GitHub Copilot Adoption/README.md"
+  },
+  {
+    "title": "01. Building the Business Case",
+    "type": "guide",
+    "pack": "GitHub Copilot Adoption",
+    "description": "Business case, rollout strategy, prompt engineering, measuring ROI",
+    "path": "GitHub Copilot Adoption/01-Building-the-Business-Case.md"
+  },
+  {
+    "title": "02. Rollout Strategy",
+    "type": "guide",
+    "pack": "GitHub Copilot Adoption",
+    "description": "Business case, rollout strategy, prompt engineering, measuring ROI",
+    "path": "GitHub Copilot Adoption/02-Rollout-Strategy.md"
+  },
+  {
+    "title": "03. Developer Enablement",
+    "type": "guide",
+    "pack": "GitHub Copilot Adoption",
+    "description": "Business case, rollout strategy, prompt engineering, measuring ROI",
+    "path": "GitHub Copilot Adoption/03-Developer-Enablement.md"
+  },
+  {
+    "title": "04. Prompt Engineering Guide",
+    "type": "guide",
+    "pack": "GitHub Copilot Adoption",
+    "description": "Business case, rollout strategy, prompt engineering, measuring ROI",
+    "path": "GitHub Copilot Adoption/04-Prompt-Engineering-Guide.md"
+  },
+  {
+    "title": "05. Measuring Impact",
+    "type": "guide",
+    "pack": "GitHub Copilot Adoption",
+    "description": "Business case, rollout strategy, prompt engineering, measuring ROI",
+    "path": "GitHub Copilot Adoption/05-Measuring-Impact.md"
+  },
+  {
+    "title": "06. Admin and Policy Guide",
+    "type": "guide",
+    "pack": "GitHub Copilot Adoption",
+    "description": "Business case, rollout strategy, prompt engineering, measuring ROI",
+    "path": "GitHub Copilot Adoption/06-Admin-and-Policy-Guide.md"
+  },
+  {
+    "title": "InnerSource Playbook",
+    "type": "pack",
+    "description": "Cross-team collaboration, contribution guidelines, governance, metrics",
+    "path": "InnerSource Playbook/README.md"
+  },
+  {
+    "title": "01 \u2014 What is InnerSource?",
+    "type": "guide",
+    "pack": "InnerSource Playbook",
+    "description": "Cross-team collaboration, contribution guidelines, governance, metrics",
+    "path": "InnerSource Playbook/01-What-is-InnerSource.md"
+  },
+  {
+    "title": "02 \u2014 Setting Up for InnerSource",
+    "type": "guide",
+    "pack": "InnerSource Playbook",
+    "description": "Cross-team collaboration, contribution guidelines, governance, metrics",
+    "path": "InnerSource Playbook/02-Setting-Up-for-InnerSource.md"
+  },
+  {
+    "title": "03 \u2014 Contribution Guidelines",
+    "type": "guide",
+    "pack": "InnerSource Playbook",
+    "description": "Cross-team collaboration, contribution guidelines, governance, metrics",
+    "path": "InnerSource Playbook/03-Contribution-Guidelines.md"
+  },
+  {
+    "title": "04 \u2014 Governance and Ownership",
+    "type": "guide",
+    "pack": "InnerSource Playbook",
+    "description": "Cross-team collaboration, contribution guidelines, governance, metrics",
+    "path": "InnerSource Playbook/04-Governance-and-Ownership.md"
+  },
+  {
+    "title": "05 \u2014 Measuring Success",
+    "type": "guide",
+    "pack": "InnerSource Playbook",
+    "description": "Cross-team collaboration, contribution guidelines, governance, metrics",
+    "path": "InnerSource Playbook/05-Measuring-Success.md"
+  },
+  {
+    "title": "Leveling Up",
+    "type": "pack",
+    "description": "Certifications, courses, agentic AI skills, and classroom resources",
+    "path": "Leveling Up/README.md"
+  },
+  {
+    "title": "GitHub Certifications and Practice",
+    "type": "guide",
+    "pack": "Leveling Up",
+    "description": "Certifications, courses, agentic AI skills, and classroom resources",
+    "path": "Leveling Up/01-GitHub-Certifications-and-Practice.md"
+  },
+  {
+    "title": "GitHub Learning Platform",
+    "type": "guide",
+    "pack": "Leveling Up",
+    "description": "Certifications, courses, agentic AI skills, and classroom resources",
+    "path": "Leveling Up/02-GitHub-Learning-Platform.md"
+  },
+  {
+    "title": "Interactive Skills and Exercises",
+    "type": "guide",
+    "pack": "Leveling Up",
+    "description": "Certifications, courses, agentic AI skills, and classroom resources",
+    "path": "Leveling Up/03-Interactive-Skills-and-Exercises.md"
+  },
+  {
+    "title": "Courses and Video Training",
+    "type": "guide",
+    "pack": "Leveling Up",
+    "description": "Certifications, courses, agentic AI skills, and classroom resources",
+    "path": "Leveling Up/04-Courses-and-Video-Training.md"
+  },
+  {
+    "title": "Classroom Transition Guide",
+    "type": "guide",
+    "pack": "Leveling Up",
+    "description": "Certifications, courses, agentic AI skills, and classroom resources",
+    "path": "Leveling Up/05-Classroom-Transition-Guide.md"
+  },
+  {
+    "title": "Migration and Onboarding",
+    "type": "pack",
+    "description": "Migrate from Azure DevOps, GitLab, Bitbucket, SVN + developer onboarding",
+    "path": "Migration and Onboarding/README.md"
+  },
+  {
+    "title": "Migration Planning",
+    "type": "guide",
+    "pack": "Migration and Onboarding",
+    "description": "Migrate from Azure DevOps, GitLab, Bitbucket, SVN + developer onboarding",
+    "path": "Migration and Onboarding/01-Migration-Planning.md"
+  },
+  {
+    "title": "Migrating from Azure DevOps",
+    "type": "guide",
+    "pack": "Migration and Onboarding",
+    "description": "Migrate from Azure DevOps, GitLab, Bitbucket, SVN + developer onboarding",
+    "path": "Migration and Onboarding/02-Migrating-from-Azure-DevOps.md"
+  },
+  {
+    "title": "Migrating from GitLab",
+    "type": "guide",
+    "pack": "Migration and Onboarding",
+    "description": "Migrate from Azure DevOps, GitLab, Bitbucket, SVN + developer onboarding",
+    "path": "Migration and Onboarding/03-Migrating-from-GitLab.md"
+  },
+  {
+    "title": "Migrating from Bitbucket and SVN",
+    "type": "guide",
+    "pack": "Migration and Onboarding",
+    "description": "Migrate from Azure DevOps, GitLab, Bitbucket, SVN + developer onboarding",
+    "path": "Migration and Onboarding/04-Migrating-from-Bitbucket-and-SVN.md"
+  },
+  {
+    "title": "Developer Onboarding Guide",
+    "type": "guide",
+    "pack": "Migration and Onboarding",
+    "description": "Migrate from Azure DevOps, GitLab, Bitbucket, SVN + developer onboarding",
+    "path": "Migration and Onboarding/05-Developer-Onboarding-Guide.md"
+  },
+  {
+    "title": "Post-Migration Checklist",
+    "type": "guide",
+    "pack": "Migration and Onboarding",
+    "description": "Migrate from Azure DevOps, GitLab, Bitbucket, SVN + developer onboarding",
+    "path": "Migration and Onboarding/06-Post-Migration-Checklist.md"
+  },
+  {
+    "title": "Platform Engineering",
+    "type": "pack",
+    "description": "Template repos, rulesets, GitHub Apps, internal developer portals",
+    "path": "Platform Engineering/README.md"
+  },
+  {
+    "title": "Platform Engineering on GitHub",
+    "type": "guide",
+    "pack": "Platform Engineering",
+    "description": "Template repos, rulesets, GitHub Apps, internal developer portals",
+    "path": "Platform Engineering/01-Platform-Engineering-on-GitHub.md"
+  },
+  {
+    "title": "Template Repositories",
+    "type": "guide",
+    "pack": "Platform Engineering",
+    "description": "Template repos, rulesets, GitHub Apps, internal developer portals",
+    "path": "Platform Engineering/02-Template-Repositories.md"
+  },
+  {
+    "title": "Repository Rulesets and Policies",
+    "type": "guide",
+    "pack": "Platform Engineering",
+    "description": "Template repos, rulesets, GitHub Apps, internal developer portals",
+    "path": "Platform Engineering/03-Repository-Rulesets-and-Policies.md"
+  },
+  {
+    "title": "GitHub Apps and Automation",
+    "type": "guide",
+    "pack": "Platform Engineering",
+    "description": "Template repos, rulesets, GitHub Apps, internal developer portals",
+    "path": "Platform Engineering/04-GitHub-Apps-and-Automation.md"
+  },
+  {
+    "title": "Internal Developer Portal",
+    "type": "guide",
+    "pack": "Platform Engineering",
+    "description": "Template repos, rulesets, GitHub Apps, internal developer portals",
+    "path": "Platform Engineering/05-Internal-Developer-Portal.md"
+  },
+  {
+    "title": "Security and Compliance",
+    "type": "pack",
+    "description": "GHAS rollout, supply chain security, compliance frameworks, incident response",
+    "path": "Security and Compliance/README.md"
+  },
+  {
+    "title": "GHAS Rollout Plan",
+    "type": "guide",
+    "pack": "Security and Compliance",
+    "description": "GHAS rollout, supply chain security, compliance frameworks, incident response",
+    "path": "Security and Compliance/01-GHAS-Rollout-Plan.md"
+  },
+  {
+    "title": "Supply Chain Security",
+    "type": "guide",
+    "pack": "Security and Compliance",
+    "description": "GHAS rollout, supply chain security, compliance frameworks, incident response",
+    "path": "Security and Compliance/02-Supply-Chain-Security.md"
+  },
+  {
+    "title": "Compliance Frameworks",
+    "type": "guide",
+    "pack": "Security and Compliance",
+    "description": "GHAS rollout, supply chain security, compliance frameworks, incident response",
+    "path": "Security and Compliance/03-Compliance-Frameworks.md"
+  },
+  {
+    "title": "Policy as Code",
+    "type": "guide",
+    "pack": "Security and Compliance",
+    "description": "GHAS rollout, supply chain security, compliance frameworks, incident response",
+    "path": "Security and Compliance/04-Policy-as-Code.md"
+  },
+  {
+    "title": "Secret Management",
+    "type": "guide",
+    "pack": "Security and Compliance",
+    "description": "GHAS rollout, supply chain security, compliance frameworks, incident response",
+    "path": "Security and Compliance/05-Secret-Management.md"
+  },
+  {
+    "title": "Incident Response",
+    "type": "guide",
+    "pack": "Security and Compliance",
+    "description": "GHAS rollout, supply chain security, compliance frameworks, incident response",
+    "path": "Security and Compliance/06-Incident-Response.md"
+  },
+  {
+    "title": "Usage-Based Billing and Cost Governance",
+    "type": "pack",
+    "description": "Metered billing model, token budgets, cost allocation, spending limits, FinOps reporting",
+    "path": "Usage-Based Billing and Cost Governance/README.md"
+  },
+  {
+    "title": "Understanding Metered Billing",
+    "type": "guide",
+    "pack": "Usage-Based Billing and Cost Governance",
+    "description": "Metered billing model, token budgets, cost allocation, spending limits, FinOps reporting",
+    "path": "Usage-Based Billing and Cost Governance/01-Understanding-Metered-Billing.md"
+  },
+  {
+    "title": "Token Budget Management",
+    "type": "guide",
+    "pack": "Usage-Based Billing and Cost Governance",
+    "description": "Metered billing model, token budgets, cost allocation, spending limits, FinOps reporting",
+    "path": "Usage-Based Billing and Cost Governance/02-Token-Budget-Management.md"
+  },
+  {
+    "title": "Cost Allocation and Chargeback",
+    "type": "guide",
+    "pack": "Usage-Based Billing and Cost Governance",
+    "description": "Metered billing model, token budgets, cost allocation, spending limits, FinOps reporting",
+    "path": "Usage-Based Billing and Cost Governance/03-Cost-Allocation-and-Chargeback.md"
+  },
+  {
+    "title": "Spending Limits and Budget Alerts",
+    "type": "guide",
+    "pack": "Usage-Based Billing and Cost Governance",
+    "description": "Metered billing model, token budgets, cost allocation, spending limits, FinOps reporting",
+    "path": "Usage-Based Billing and Cost Governance/04-Spending-Limits-and-Budget-Alerts.md"
+  },
+  {
+    "title": "Seat and Minutes Optimization",
+    "type": "guide",
+    "pack": "Usage-Based Billing and Cost Governance",
+    "description": "Metered billing model, token budgets, cost allocation, spending limits, FinOps reporting",
+    "path": "Usage-Based Billing and Cost Governance/05-Seat-and-Minutes-Optimization.md"
+  },
+  {
+    "title": "Governance and Reporting",
+    "type": "guide",
+    "pack": "Usage-Based Billing and Cost Governance",
+    "description": "Metered billing model, token budgets, cost allocation, spending limits, FinOps reporting",
+    "path": "Usage-Based Billing and Cost Governance/06-Governance-and-Reporting.md"
+  }
+]

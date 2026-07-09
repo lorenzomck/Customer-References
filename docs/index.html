@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Search — GitHub Field Guides</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg-alt: #161b22;
+    --border: #30363d;
+    --text: #f0f6fc;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --accent-2: #3fb950;
+    --pill-bg: #1f6feb33;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+  }
+  .wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  p.sub {
+    text-align: center;
+    color: var(--muted);
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+  .search-box {
+    position: relative;
+    margin-bottom: 28px;
+  }
+  input#q {
+    width: 100%;
+    padding: 14px 16px 14px 44px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--bg-alt);
+    color: var(--text);
+    outline: none;
+  }
+  input#q:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px #58a6ff33;
+  }
+  .search-box::before {
+    content: "🔍";
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    font-size: 15px;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  .tag {
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: var(--pill-bg);
+    color: var(--accent);
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid #1f6feb55;
+  }
+  .tag:hover { background: #1f6feb55; }
+  #count {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .result {
+    display: block;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--bg-alt);
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s;
+  }
+  .result:hover { border-color: var(--accent); }
+  .result .title {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  .result .meta {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .result .pill {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-right: 8px;
+  }
+  .pill.pack { background: #23863633; color: var(--accent-2); }
+  .pill.guide { background: #1f6feb33; color: var(--accent); }
+  .empty {
+    text-align: center;
+    color: var(--muted);
+    padding: 40px 0;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 48px;
+  }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>🔎 Search the Field Guides</h1>
+    <p class="sub">Find the right pack or guide across all Customer Reference resources.</p>
+
+    <div class="search-box">
+      <input id="q" type="text" placeholder="Try “billing”, “SSO”, “agent”, “migration”…" autofocus />
+    </div>
+
+    <div class="tags" id="tags"></div>
+
+    <div id="count"></div>
+    <div id="results"></div>
+
+    <footer>
+      Data indexed from <a href="https://github.com/lorenzomck/GitHub-Field-Guides" target="_blank" rel="noopener">lorenzomck/GitHub-Field-Guides</a>.
+    </footer>
+  </div>
+
+<script>
+  const REPO = "lorenzomck/GitHub-Field-Guides";
+  const BRANCH = "main";
+  const QUICK_TAGS = ["copilot", "security", "billing", "agent", "identity", "migration", "actions", "compliance", "governance", "onboarding"];
+
+  const resultsEl = document.getElementById("results");
+  const countEl = document.getElementById("count");
+  const inputEl = document.getElementById("q");
+  const tagsEl = document.getElementById("tags");
+
+  let INDEX = [];
+
+  function blobUrl(path) {
+    const encoded = path.split("/").map(encodeURIComponent).join("/");
+    return `https://github.com/${REPO}/blob/${BRANCH}/${encoded}`;
+  }
+
+  function score(item, term) {
+    const t = term.toLowerCase();
+    const title = item.title.toLowerCase();
+    const desc = (item.description || "").toLowerCase();
+    const pack = (item.pack || item.title || "").toLowerCase();
+    let s = 0;
+    if (title === t) s += 100;
+    if (title.startsWith(t)) s += 50;
+    if (title.includes(t)) s += 30;
+    if (pack.includes(t)) s += 15;
+    if (desc.includes(t)) s += 10;
+    return s;
+  }
+
+  function render(items, term) {
+    resultsEl.innerHTML = "";
+    if (!items.length) {
+      countEl.textContent = "";
+      resultsEl.innerHTML = `<div class="empty">No matches for “${term}”. Try a broader term like “security” or “copilot”.</div>`;
+      return;
+    }
+    countEl.textContent = `${items.length} result${items.length === 1 ? "" : "s"}`;
+    items.forEach(item => {
+      const a = document.createElement("a");
+      a.className = "result";
+      a.href = blobUrl(item.path);
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.innerHTML = `
+        <div class="title">
+          <span class="pill ${item.type}">${item.type === "pack" ? "PACK" : "GUIDE"}</span>
+          ${item.title}
+        </div>
+        <div class="meta">${item.pack ? item.pack + " — " : ""}${item.description || ""}</div>
+      `;
+      resultsEl.appendChild(a);
+    });
+  }
+
+  function search(term) {
+    if (!term.trim()) {
+      resultsEl.innerHTML = "";
+      countEl.textContent = "";
+      return;
+    }
+    const scored = INDEX
+      .map(item => ({ item, s: score(item, term) }))
+      .filter(x => x.s > 0)
+      .sort((a, b) => b.s - a.s)
+      .map(x => x.item);
+    render(scored, term);
+  }
+
+  inputEl.addEventListener("input", e => search(e.target.value));
+
+  QUICK_TAGS.forEach(tag => {
+    const el = document.createElement("span");
+    el.className = "tag";
+    el.textContent = tag;
+    el.onclick = () => {
+      inputEl.value = tag;
+      search(tag);
+      inputEl.focus();
+    };
+    tagsEl.appendChild(el);
+  });
+
+  fetch("./search-index.json")
+    .then(r => r.json())
+    .then(data => {
+      INDEX = data;
+      const params = new URLSearchParams(window.location.search);
+      const initial = params.get("q");
+      if (initial) {
+        inputEl.value = initial;
+        search(initial);
+      }
+    })
+    .catch(() => {
+      resultsEl.innerHTML = `<div class="empty">Could not load search index.</div>`;
+    });
+</script>
+</body>
+</html>
